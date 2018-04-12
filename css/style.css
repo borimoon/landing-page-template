@@ -6,14 +6,74 @@ html {
 body {
   background-color: #fff;
   color: #070707;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*--- typography ---*/
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 p,
 li,
 a {
   font-size: 1.7rem;
   line-height: 1.6;
+}
+
+.heading {
+  padding: 1em 0 1.2em;
+}
+
+.text {
+  margin-bottom: 1.7em;
+}
+
+.text:only-child,
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.text a {
+  border-bottom: 1px solid #070707;
+}
+
+.side-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 /*--- links ---*/
@@ -125,6 +185,9 @@ a {
 /* contact */
 
 /*--- footer ---*/
+.copyright {
+  font-size: 1.1rem;
+}
 /* social */
 
 
@@ -132,6 +195,9 @@ a {
 /*------- 600 -------*/
 /*-------------------*/
 @media (min-width: 600px) {
+
+  /*----- BASIC STYLES 600-----*/
+
   /*--- LAYOUT STYLES 600---*/
   /*--- header 600 ---*/
   /* menu 600 */
@@ -150,6 +216,12 @@ a {
 /*------- 900 -------*/
 /*-------------------*/
 @media (min-width: 900px) {
+
+  /*----- BASIC STYLES 900-----*/
+  .heading-1 {
+    font-size: 4.7rem;
+  }
+
   /*--- LAYOUT STYLES 900---*/
   /*--- header 900 ---*/
   /* menu 900 */
@@ -172,6 +244,16 @@ a {
 /*------- 1200 -------*/
 /*-------------------*/
 @media (min-width: 1200px) {
+
+  /*----- BASIC STYLES 1200-----*/
+  .heading-1 {
+    font-size: 6rem;
+  }
+
+  .heading-2 {
+    font-size: 3.7rem;
+  }
+
   /*--- LAYOUT STYLES 1200---*/
   /*--- header 1200 ---*/
   /* menu 1200 */
