@@ -18,3 +18,37 @@ $(function() {
     menuVisible = false;
   });
 });
+
+// animate scroll down
+$(document).ready(function (){
+    $('.to-about').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.about').offset().top
+        }, 700);
+    });
+});
+
+$(document).ready(function (){
+    $('.to-service').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.service').offset().top
+        }, 700);
+    });
+});
+
+$(document).ready(function (){
+    $('.to-contact').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.contact').offset().top
+        }, 700);
+    });
+});
+
+// animate scroll to top
+$(document).ready(function (){
+    $('.to-top').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.uvp').offset().top
+        }, 700);
+    });
+});

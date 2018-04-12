@@ -62,6 +62,11 @@ li {
   padding: 1em 0 1.2em;
 }
 
+.heading-1 {
+  color: #fff;
+  text-align: center;
+}
+
 .text {
   margin-bottom: 1.7em;
 }
@@ -82,6 +87,7 @@ li {
 
 /*--- links ---*/
 a {
+  color: #070707;
   text-decoration: none;
 }
 
@@ -91,12 +97,17 @@ a {
 /*--- LAYOUT STYLES ---*/
 /*--- header ---*/
 .header {
-  /*dev*/background-color: rgba(0, 0, 100, .5);
+  background-color: #fff;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+}
+
+.site-identity a {
+  cursor: pointer;
+  display: block;
 }
 
 .logo {
@@ -227,37 +238,54 @@ a {
 }
 
 /*--- main content ---*/
-
-.content {
-  margin: 0 1.5rem 7em;
-}
-
 /* uvp */
 .uvp {
-  /*dev*/background-color: rgba(255, 0, 0, .5);
+  background: url('../assets/hero-image.jpg') no-repeat top center;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   height: 100vh;
-  margin-bottom: 7em;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 2em;
   width: 100%;
 }
 
-/* about */
-.about {
-  /*dev*/background-color: rgba(0, 255, 0, .5);
-  height: 200px;
+.hero-subheading {
+  color: #fff;
+  text-align: center;
 }
 
-/* service */
-.service {
-  /*dev*/background-color: rgba(0, 0, 255, .5);
-  height: 200px;
+.content {
+  margin: 0 1.5rem 2em;
+  padding-top: 5rem;
 }
-/* contact */
-.contact {
-  /*dev*/background-color: rgba(100, 0, 0, .5);
-  height: 200px;
-}
+
+/* about */
 
 /*--- footer ---*/
+.content.footer {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 1em 0;
+}
+
+.tenders-logo {
+  bottom: 0;
+  height: 138px;
+  position: fixed;
+  right: 0;
+  width: 200px;
+}
+
+.tenders-logo img {
+  width: 100%;
+}
+
 .copyright {
   font-size: 1rem;
 }
@@ -327,11 +355,39 @@ a {
 
   /*--- main content 900 ---*/
   /* uvp 900 */
+
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 870px;
+  }
+
   /* about 900 */
   /* service 900 */
+  .usp {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .usp div {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-right: 1.5rem;
+  }
+
+  .usp div:last-child {
+    margin-right: 0;
+  }
   /* contact 900 */
 
   /*--- footer 900 ---*/
+  .tenders-logo {
+    height: 241px;
+    width: 349px;
+  }
+
   /* social 900 */
 }
 
@@ -363,20 +419,23 @@ a {
   /* menu 1200 */
 
   /*--- main content 1200 ---*/
-  .content {
-    margin-bottom: 12rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-  }
-
   /* uvp 1200 */
   .uvp {
-    margin-bottom: 12rem;
+    margin-bottom: 7rem;
+  }
+
+  .content {
+    margin-bottom: 5rem;
+    width: 900px;
+    padding-top: 7rem;
   }
 
   /* about 1200 */
   /* service 1200 */
+  .usp div {
+    margin-right: 2rem;
+  }
+
   /* contact 1200 */
 
   /*--- footer 1200 ---*/
