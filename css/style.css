@@ -51,6 +51,10 @@ p,
 li,
 a {
   font-size: 1.7rem;
+}
+
+p,
+li {
   line-height: 1.6;
 }
 
@@ -86,7 +90,51 @@ a {
 
 /*--- LAYOUT STYLES ---*/
 /*--- header ---*/
+.header {
+  /*dev*/background-color: rgba(0, 0, 100, .5);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  height: 50px;
+}
+
 /* menu */
+.navbar {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  height: 50px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.menu {
+  background-color: #fafafa;
+  display: none;
+  height: 100vh;
+  left: 0;
+  opacity: .98;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+}
+
+.menu li:first-child {
+  margin-top: 5em;
+}
+
+.menu a {
+  cursor: pointer;
+}
+
 /* menutoggle */
 .toggle,
 .menuopen span::before,
@@ -179,14 +227,39 @@ a {
 }
 
 /*--- main content ---*/
+
+.content {
+  margin: 0 1.5rem 7em;
+}
+
 /* uvp */
+.uvp {
+  /*dev*/background-color: rgba(255, 0, 0, .5);
+  height: 100vh;
+  margin-bottom: 7em;
+  width: 100%;
+}
+
 /* about */
+.about {
+  /*dev*/background-color: rgba(0, 255, 0, .5);
+  height: 200px;
+}
+
 /* service */
+.service {
+  /*dev*/background-color: rgba(0, 0, 255, .5);
+  height: 200px;
+}
 /* contact */
+.contact {
+  /*dev*/background-color: rgba(100, 0, 0, .5);
+  height: 200px;
+}
 
 /*--- footer ---*/
 .copyright {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 /* social */
 
@@ -225,6 +298,28 @@ a {
   /*--- LAYOUT STYLES 900---*/
   /*--- header 900 ---*/
   /* menu 900 */
+  .menu {
+    background-color: transparent;
+    display: -webkit-flex !important;
+    display: flex !important;
+    height: auto;
+    position: static;
+    text-align: left;
+    width: auto;
+  }
+
+  .menu li {
+    margin-right: 2rem;
+  }
+
+  .menu li:first-child {
+    margin-top: 0;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
   /* menutoggle 900 */
   .toggle {
     display: none;
@@ -256,10 +351,30 @@ a {
 
   /*--- LAYOUT STYLES 1200---*/
   /*--- header 1200 ---*/
+  .navbar {
+    height: 70px;
+    padding: 0 2.7rem;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
   /* menu 1200 */
 
   /*--- main content 1200 ---*/
+  .content {
+    margin-bottom: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+
   /* uvp 1200 */
+  .uvp {
+    margin-bottom: 12rem;
+  }
+
   /* about 1200 */
   /* service 1200 */
   /* contact 1200 */
