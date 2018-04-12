@@ -1,0 +1,194 @@
+/*----- BASIC STYLES -----*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  color: #070707;
+}
+
+/*--- typography ---*/
+p,
+li,
+a {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+/*--- links ---*/
+a {
+  text-decoration: none;
+}
+
+/*--- forms ---*/
+/*--- images ---*/
+
+/*--- LAYOUT STYLES ---*/
+/*--- header ---*/
+/* menu */
+/* menutoggle */
+.toggle,
+.menuopen span::before,
+.menuopen span::after {
+  z-index: 999;
+}
+
+.toggle span,
+.menuopen span {
+  display: block;
+  height: 5px;
+  position: relative;
+}
+
+.menuopen span {
+  width: 44px;
+}
+
+.toggle span {
+  background-color: #070707;
+  -webkit-transition: background-color .7s ease;
+  -moz-transition: background-color .7s ease;
+  -ms-transition: background-color .7s ease;
+  -o-transition: background-color .7s ease;
+  transition: background-color .7s ease;
+  width: 37px;
+}
+
+.toggle span::before,
+.toggle span::after {
+  background-color: #070707;
+  content: ' ';
+  display: block;
+  height: 5px;
+  position: absolute;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  width: 37px;
+}
+
+.toggle span::before {
+  top: -13px;
+}
+
+.toggle span::after {
+  bottom: -13px;
+}
+
+.menuopen span {
+  background-color: transparent;
+  -webkit-transition: background-color .7s ease;
+  -moz-transition: background-color .7s ease;
+  -ms-transition: background-color .7s ease;
+  -o-transition: background-color .7s ease;
+  transition: background-color .7s ease;
+}
+
+.menuopen span::before,
+.menuopen span::after {
+  background-color: #070707;
+  content: ' ';
+  display: block;
+  height: 5px;
+  position: absolute;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  width: 44px;
+}
+
+.menuopen span::before {
+  -webkit-transform: translateY(13px) rotateZ(45deg);
+  -moz-transform: translateY(13px) rotateZ(45deg);
+  -ms-transform: translateY(13px) rotateZ(45deg);
+  -o-transform: translateY(13px) rotateZ(45deg);
+  transform: translateY(13px) rotateZ(45deg);
+}
+
+.menuopen span::after {
+  -webkit-transform: translateY(-13px) rotateZ(-45deg);
+  -moz-transform: translateY(-13px) rotateZ(-45deg);
+  -ms-transform: translateY(-13px) rotateZ(-45deg);
+  -o-transform: translateY(-13px) rotateZ(-45deg);
+  transform: translateY(-13px) rotateZ(-45deg);
+}
+
+/*--- main content ---*/
+/* uvp */
+/* about */
+/* service */
+/* contact */
+
+/*--- footer ---*/
+/* social */
+
+
+/*-------------------*/
+/*------- 600 -------*/
+/*-------------------*/
+@media (min-width: 600px) {
+  /*--- LAYOUT STYLES 600---*/
+  /*--- header 600 ---*/
+  /* menu 600 */
+
+  /*--- main content 600 ---*/
+  /* uvp 600 */
+  /* about 600 */
+  /* service 600 */
+  /* contact 600 */
+
+  /*--- footer 600 ---*/
+  /* social 600 */
+}
+
+/*-------------------*/
+/*------- 900 -------*/
+/*-------------------*/
+@media (min-width: 900px) {
+  /*--- LAYOUT STYLES 900---*/
+  /*--- header 900 ---*/
+  /* menu 900 */
+  /* menutoggle 900 */
+  .toggle {
+    display: none;
+  }
+
+  /*--- main content 900 ---*/
+  /* uvp 900 */
+  /* about 900 */
+  /* service 900 */
+  /* contact 900 */
+
+  /*--- footer 900 ---*/
+  /* social 900 */
+}
+
+/*-------------------*/
+/*------- 1200 -------*/
+/*-------------------*/
+@media (min-width: 1200px) {
+  /*--- LAYOUT STYLES 1200---*/
+  /*--- header 1200 ---*/
+  /* menu 1200 */
+
+  /*--- main content 1200 ---*/
+  /* uvp 1200 */
+  /* about 1200 */
+  /* service 1200 */
+  /* contact 1200 */
+
+  /*--- footer 1200 ---*/
+  /* social 1200 */
+}
+
+/*-------------------*/
+/*------- 1600 -------*/
+/*-------------------*/
+@media (min-width: 1600px) {
+
+}
